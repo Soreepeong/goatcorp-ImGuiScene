@@ -555,7 +555,7 @@ namespace ImGuiScene
             });
 
             // Create the pixel shader
-            using (var stream = assembly.GetManifestResourceStream("imgui-frag.hlsl.bytes"))
+            using (var stream = assembly.GetManifestResourceStream("imgui-frag-channel.hlsl.bytes"))
             {
                 shaderData = new byte[stream.Length];
                 stream.Read(shaderData, 0, shaderData.Length);
